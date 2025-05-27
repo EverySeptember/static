@@ -1,0 +1,68 @@
+#root {
+    width: 100vw;
+    min-height: 100vh;
+    text-align: center;
+    background: #87B5B6;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.box {
+    margin: 10px;
+    width: 45%;
+    height: 90vh;
+    border: 1px solid black;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.boxTitle {
+    font-size: 0.9em;
+    padding: 0.5em 0.5em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boxTitle button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.boxTitle button:hover {
+    color: rgb(127, 223, 180);
+}
+
+.boxContent {
+    flex: auto;
+    padding: 0.5em;
+    border-top: 1px solid black;
+    display: flex;
+    background-color: #c5d7d8;
+}
+
+.boxContent textarea {
+    margin: 0;
+    border: none;
+    resize: none;
+    background-color: #c5d7d8;
+    overflow-y: auto;
+    flex: auto;
+    outline: none;
+}
+
+.mdWrapper {
+    all: revert;
+    overflow: scroll;
+    display: block;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.mdWrapper pre {
+    background-color: #fff;
+}
